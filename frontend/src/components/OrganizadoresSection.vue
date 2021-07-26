@@ -46,16 +46,25 @@
                           {{ feature.profession }}
                         </div>
 
-                          <div class="profile-card-inf__item">
-                            <div class="profile-card-inf__title">
-                              <v-icon class="mr-2">mdi-linkedin</v-icon>{{ feature.linkedin }}
-                            </div>
+                        <div class="profile-card-inf__item">
+                          <div class="profile-card-inf__title">
+                            <v-icon class="mr-2">mdi-linkedin</v-icon
+                            >{{ feature.linkedin }}
                           </div>
+                        </div>
 
                         <div class="profile-card-ctr">
-                          <button class="profile-card__button button--green">
+                          <v-btn
+                            rounded
+                            :href="urlComun + feature.linkedin"
+                            target="_blank"
+                            large
+                            color="accent"
+                            class="mt-4 profile-card__button button--green"
+                          >
+                            <v-icon class="mr-2">mdi-email</v-icon>
                             contactar
-                          </button>
+                          </v-btn>
                         </div>
                       </div>
                     </div>
@@ -75,6 +84,7 @@
 export default {
   data() {
     return {
+      urlComun: "https://www.linkedin.com/in/",
       meetup: [
         {
           profile:
@@ -127,10 +137,9 @@ export default {
   border-radius: 12px;
   border-width: 1px;
   border-style: solid;
-  border-color:  rgba(177, 177, 177, 0.994);;
+  border-color: rgba(177, 177, 177, 0.994);
   position: relative;
   top: 80px;
-  
 
   &.active {
     .profile-card__cnt {
@@ -165,7 +174,7 @@ export default {
 
   &__txt {
     font-size: 12px;
-    color: #00AA46;
+    color: #00aa46;
     margin-bottom: 15px;
   }
 
@@ -177,7 +186,6 @@ export default {
     margin-top: 35px;
 
     &__item {
-      
       min-width: 10px;
 
       @media screen and (max-width: 768px) {
@@ -249,7 +257,7 @@ export default {
     backface-visibility: hidden;
     transition: all 0.3s;
     position: absolute;
-    top: 90%;
+    top: 85%;
 
     @media screen and (max-width: 768px) {
       min-width: 170px;
