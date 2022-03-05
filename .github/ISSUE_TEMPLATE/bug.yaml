@@ -21,7 +21,7 @@ body:
   - type: textarea
     id: pasos
     attributes:
-      label: pasos para reproducir
+      label: Pasos para reproducir
       description: ¿Que pasos se requieren para reproducir el error?
     validations:
       required: true
