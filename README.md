@@ -2,7 +2,8 @@
 
 ### Instalación
 
-* Clona el repositorio por medio de git:
+- Clona el repositorio por medio de git:
+
 ```bash
 $ git clone https://github.com/node-co/node-co.git
 ```
@@ -10,18 +11,19 @@ $ git clone https://github.com/node-co/node-co.git
 1. Ingresar al directorio clonado `node-co` :
 
 ```bash
-$ cd node-co/frontend
+$ cd node-co
 ```
 
 2. Instalar las dependencias:
 
 ```bash
-$ yarn install o npm install
+$ npm i
 ```
 
 3. Inicie el servidor:
+
 ```bash
-$ yarn serve
+$ npm run dev
 ```
 
-4. Visual ingresando con la url http://localhost:8080/
+4. Visual ingresando con la url http://localhost:3000/
