@@ -37,7 +37,7 @@ const CustomHeader: React.FC = () => {
         <Col span={20}>
           <Row justify='end'>
             {navBarOptions.map((option, index) => (
-              <Col span={5} key={index}>
+              <Col span={4} key={index}>
                 <Link to={option.link}>
                   <span>{option.title}</span>
                 </Link>
