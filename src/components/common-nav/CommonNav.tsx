@@ -12,10 +12,13 @@ const CommonNavComponent: React.FC<CommonNav> = ({
       <Col span={2} offset={2}>
         <Image width={100} preview={false} src={logo}></Image>
       </Col>
-      <Col span={20}>
+      <Col span={17}>
         <Row justify='end'>
           {options.map((option, index) => (
-            <Col span={option.isSpan === "YES" ? 4 : 2} key={index}>
+            <Col
+              span={option.isSpan === "YES" ? (index === 0 ? 4 : 3) : 2}
+              key={index}
+            >
               <a
                 href={option.link}
                 target={option.isSpan === "YES" ? "_self" : "_blank"}
