@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
 import { Col, Row, Image } from "antd";
 import { CommonNav } from "@/types/HeaderTypes";
 
@@ -16,14 +15,17 @@ const CommonNavComponent: React.FC<CommonNav> = ({
       <Col span={20}>
         <Row justify='end'>
           {options.map((option, index) => (
-            <Col span={4} key={index}>
-              <Link to={option.link}>
+            <Col span={option.isSpan === "YES" ? 4 : 2} key={index}>
+              <a
+                href={option.link}
+                target={option.isSpan === "YES" ? "_self" : "_blank"}
+              >
                 {option.isSpan === "YES" ? (
                   <span>{option.title}</span>
                 ) : (
                   <i className={option.title}></i>
                 )}
-              </Link>
+              </a>
             </Col>
           ))}
         </Row>
