@@ -2,7 +2,7 @@ import { Layout } from "antd";
 const { Header } = Layout;
 import nodeLight from "@/assets/nodeco.svg";
 import CommonNavComponent from "@/components/common-nav/CommonNav";
-import { NavOptions } from "@/types/HeaderTypes";
+import { NavOptions } from "@/types/GenericTypes";
 import "./Header.css";
 
 const CustomHeader: React.FC = () => {

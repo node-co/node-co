@@ -1,8 +1,8 @@
 section#our-community {
-  transform: translateY(8%);
+  transform: translateY(9%);
 }
 
-div.main-text {
+section#our-community > div.main-text {
   position: absolute;
   top: 50%;
   transform: translateX(50%) translateY(-50%);
@@ -14,25 +14,25 @@ div.main-text {
   z-index: 1;
 }
 
-div.main-text > span:nth-child(1) {
+section#our-community > div.main-text > span:nth-child(1) {
   font-size: 2.5rem;
   font-weight: 600;
   line-height: 3rem;
 }
 
-div.main-text > span:nth-child(2) {
+section#our-community > div.main-text > span:nth-child(2) {
   font-size: 2rem;
   font-weight: 600;
   line-height: 3rem;
 }
 
-div.main-text > span:nth-child(3) {
+section#our-community > div.main-text > span:nth-child(3) {
   font-size: 1.7rem;
   font-weight: 600;
   line-height: 3rem;
 }
 
-div.main-text > a.ant-btn {
+section#our-community > div.main-text > a.ant-btn {
   display: flex;
   justify-content: space-around;
   align-items: center;

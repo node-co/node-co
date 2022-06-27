@@ -2,7 +2,7 @@ import { Button, Col, Divider, Layout, Row } from "antd";
 const { Footer } = Layout;
 import nodeDark from "@/assets/nodeco-dark.svg";
 import CommonNavComponent from "@/components/common-nav/CommonNav";
-import { NavOptions } from "@/types/HeaderTypes";
+import { NavOptions } from "@/types/GenericTypes";
 import "./Footer.css";
 
 const CustomFooter: React.FC = () => {

@@ -4,3 +4,9 @@ export interface CommonNav {
   logo: string;
   options: NavOptions[];
 }
+
+export type CardType = Pick<NavOptions, "title" | "link">;
+
+export interface CardOption extends CardType {
+  date: string;
+}

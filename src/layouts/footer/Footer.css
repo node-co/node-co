@@ -4,28 +4,32 @@ footer.ant-layout-footer {
   margin: 0;
 }
 
-div.ant-row > div.ant-col > a > i {
+footer.ant-layout-footer div.ant-row > div.ant-col > a > i {
   font-size: 1.5rem;
   color: #000000;
 }
 
-div.ant-row > div.ant-col > a > i:hover {
+footer.ant-layout-footer div.ant-row > div.ant-col > a > i:hover {
   background-color: #e6e6e6;
   padding: 3px;
   border-radius: 50%;
 }
 
-div.ant-row > div.ant-col > span {
+footer.ant-layout-footer div.ant-row > div.ant-col > span {
   font-size: 0.7rem;
   font-weight: var(--font-weight-400);
   color: var(--secondary-color);
 }
 
-div.ant-row > div.ant-col > button.ant-btn:hover {
+footer.ant-layout-footer div.ant-row > div.ant-col > button.ant-btn {
+  margin-bottom: 1rem;
+}
+
+footer.ant-layout-footer div.ant-row > div.ant-col > button.ant-btn:hover {
   border-color: var(--bg-primary);
 }
 
-div.ant-row > div.ant-col > button.ant-btn > i {
+footer.ant-layout-footer div.ant-row > div.ant-col > button.ant-btn > i {
   font-size: 1rem;
   font-weight: var(--font-weight-400);
   color: var(--bg-primary);
