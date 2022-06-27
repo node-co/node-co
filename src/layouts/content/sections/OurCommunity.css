@@ -1,7 +1,11 @@
+section#our-community {
+  transform: translateY(12%);
+}
+
 div.main-text {
   position: absolute;
   top: 50%;
-  transform: translateX(50%) translateY(-70%);
+  transform: translateX(50%) translateY(-50%);
   width: 30vw;
   height: 30vh;
   display: flex;

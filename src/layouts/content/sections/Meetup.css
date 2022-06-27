@@ -1,0 +1,3 @@
+section#meetup > div.ant-image > img.ant-image-img {
+  transform: translateY(-5%);
+}

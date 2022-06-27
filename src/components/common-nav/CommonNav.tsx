@@ -16,7 +16,13 @@ const CommonNavComponent: React.FC<CommonNav> = ({
         <Row justify='end'>
           {options.map((option, index) => (
             <Col
-              span={option.isSpan === "YES" ? (index === 0 ? 4 : 3) : 2}
+              span={
+                option.isSpan === "YES"
+                  ? index === 0 || index === 3
+                    ? 4
+                    : 3
+                  : 2
+              }
               key={index}
             >
               <a
