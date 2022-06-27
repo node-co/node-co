@@ -1,4 +1,4 @@
-import { Layout } from "antd";
+import { Button, Col, Divider, Layout, Row } from "antd";
 const { Footer } = Layout;
 import nodeDark from "@/assets/nodeco-dark.svg";
 import CommonNavComponent from "@/components/common-nav/CommonNav";
@@ -6,6 +6,8 @@ import { NavOptions } from "@/types/HeaderTypes";
 import "./Footer.css";
 
 const CustomFooter: React.FC = () => {
+  const textFooter =
+    "© 2021 NodeCO. Todos los derechos reservados. Medellín - Colombia";
   const footerOptions: NavOptions[] = [
     {
       title: "bx bxl-facebook-circle",
@@ -36,6 +38,21 @@ const CustomFooter: React.FC = () => {
   return (
     <Footer>
       <CommonNavComponent logo={nodeDark} options={footerOptions} />
+      <Row justify='center'>
+        <Col span={20} pull={1}>
+          <Divider />
+        </Col>
+      </Row>
+      <Row justify='center'>
+        <Col span={18}>
+          <span>{textFooter}</span>
+        </Col>
+        <Col span={1} pull={1}>
+          <Button>
+            <i className='bx bx-up-arrow-alt'></i>
+          </Button>
+        </Col>
+      </Row>
     </Footer>
   );
 };

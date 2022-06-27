@@ -4,7 +4,24 @@ footer.ant-layout-footer {
   margin: 0;
 }
 
-div.ant-col > a > i {
+div.ant-row > div.ant-col > a > i {
   font-size: 1.5rem;
   color: #000000;
+}
+
+div.ant-row > div.ant-col > span {
+  font-family: var(--font-family);
+  font-size: 0.7rem;
+  font-weight: var(--font-weight-400);
+  color: #616f92;
+}
+
+div.ant-row > div.ant-col > button.ant-btn:hover {
+  border-color: var(--bg-primary);
+}
+
+div.ant-row > div.ant-col > button.ant-btn > i {
+  font-size: 1rem;
+  font-weight: var(--font-weight-400);
+  color: var(--bg-primary);
 }
