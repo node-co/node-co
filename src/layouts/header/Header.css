@@ -9,20 +9,20 @@ header.ant-layout-header {
   z-index: 2;
 }
 
-div.ant-row > div.ant-col {
+header.ant-layout-header div.ant-row > div.ant-col {
   text-align: center;
 }
 
-div.ant-row > div.ant-col > a {
+header.ant-layout-header div.ant-row > div.ant-col > a {
   color: var(--primary-color);
 }
 
-div.ant-row > div.ant-col > a > span {
+header.ant-layout-header div.ant-row > div.ant-col > a > span {
   transition-property: font-weight;
   transition-duration: 100ms;
 }
 
-div.ant-row > div.ant-col > a > span:hover {
+header.ant-layout-header div.ant-row > div.ant-col > a > span:hover {
   cursor: pointer;
   border-bottom: 1px solid var(--bg-primary);
   font-weight: var(--font-weight-400);
