@@ -35,7 +35,6 @@ const CustomHeader: React.FC = () => {
   ];
   return (
     <Header>
-      <i className='bx bxl-youtube'></i>
       <CommonNavComponent logo={nodeLight} options={headerOptions} />
     </Header>
   );

@@ -1,0 +1,10 @@
+footer.ant-layout-footer {
+  background-color: #ffffff;
+  padding: 0;
+  margin: 0;
+}
+
+div.ant-col > a > i {
+  font-size: 1.5rem;
+  color: #000000;
+}
