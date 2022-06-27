@@ -1,7 +1,12 @@
 :root {
   --bg-primary: #00aa46;
   --primary-color: #ffffff;
+  --secondary-color: #616f92;
   --font-family: "Poppins", Arial, Helvetica, sans-serif;
   --font-weight-200: 200;
   --font-weight-400: 400;
+}
+
+* {
+  font-family: var(--font-family);
 }

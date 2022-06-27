@@ -10,7 +10,7 @@ const CustomHeader: React.FC = () => {
     {
       title: "NUESTRA COMUNIDAD",
       isSpan: "YES",
-      link: "#our-comunity",
+      link: "#our-community",
     },
     {
       title: "MEETUP",
