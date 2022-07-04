@@ -16,7 +16,7 @@ section#organizers span:nth-child(2) {
   font-weight: 400;
   font-size: 1.2rem;
   text-align: center;
-  margin-bottom: 8rem;
+  margin-bottom: 6rem;
 }
 
 section#organizers > div.ant-row > div.ant-col > button.ant-btn {
@@ -44,7 +44,7 @@ section#organizers div.ant-card {
 
 section#organizers div.ant-card > div.ant-card-body > span.ant-avatar {
   position: absolute;
-  top: -40%;
+  top: -45%;
   left: 50%;
   transform: translateX(-50%);
 }

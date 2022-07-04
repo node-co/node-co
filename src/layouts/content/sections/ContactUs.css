@@ -1,0 +1,35 @@
+section#contact-us {
+  width: 100vw;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--septenary-color);
+}
+
+section#contact-us > div.contac-container {
+  width: 70vw;
+  height: 30vh;
+  padding: 1rem;
+}
+
+section#contact-us > div.contac-container h2 {
+  font-size: 1.8rem;
+}
+
+section#contact-us > div.contac-container p {
+  font-size: 1.1rem;
+}
+
+section#contact-us > div.contac-container ul > li {
+  font-size: 0.63rem;
+  list-style-type: none;
+}
+
+section#contact-us > div.contac-container ul > li > i {
+  margin-right: 0.5rem;
+  color: var(--primary-color);
+  background-color: var(--quaternary-color);
+  border-radius: 50%;
+  font-size: 0.9rem;
+}

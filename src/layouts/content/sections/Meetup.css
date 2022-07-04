@@ -1,11 +1,10 @@
 section#meetup > div.card-container {
   position: absolute;
-  display: flex;
-  flex-direction: column;
-  top: 100%;
-  transform: translateX(12%) translateY(-50%);
   width: 80vw;
   height: 50vh;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(12%) translateY(40%);
   z-index: 1;
 }
 
