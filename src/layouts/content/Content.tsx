@@ -8,7 +8,7 @@ const { Content } = Layout;
 
 const CustomContent = () => {
   return (
-    <Content>
+    <Content style={{ backgroundColor: "#ffffff" }}>
       <OurCommunity />
       <Meetup />
       <Talks />

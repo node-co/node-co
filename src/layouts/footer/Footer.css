@@ -1,7 +1,6 @@
 footer.ant-layout-footer {
-  padding-top: 2rem;
+  transform: translateY(-15%);
   background-color: var(--quaternary-color);
-  margin: 0;
 }
 
 footer.ant-layout-footer div.ant-row > div.ant-col > a > i {
@@ -19,10 +18,6 @@ footer.ant-layout-footer div.ant-row > div.ant-col > span {
   font-size: 0.7rem;
   font-weight: var(--font-weight-400);
   color: var(--secondary-color);
-}
-
-footer.ant-layout-footer div.ant-row > div.ant-col > button.ant-btn {
-  margin-bottom: 1rem;
 }
 
 footer.ant-layout-footer div.ant-row > div.ant-col > button.ant-btn:hover {

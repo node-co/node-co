@@ -80,7 +80,17 @@ const Organizers: React.FC = () => {
               return (
                 <Col span={8} key={organizer.id}>
                   <Card>
-                    <Avatar src={organizer.avatar} size={110} />
+                    <Avatar
+                      src={organizer.avatar}
+                      size={{
+                        xs: 60,
+                        sm: 80,
+                        md: 90,
+                        lg: 100,
+                        xl: 110,
+                        xxl: 140,
+                      }}
+                    />
                     <h3>{organizer.name}</h3>
                     <p>{organizer.profesion}</p>
                     <p>

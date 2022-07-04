@@ -2,6 +2,7 @@ section#organizers {
   background-color: var(--octonary-color);
   padding: 1rem;
   min-height: 60vh;
+  transform: translateY(-7%);
 }
 
 section#organizers span:first-child {
@@ -44,7 +45,7 @@ section#organizers div.ant-card {
 
 section#organizers div.ant-card > div.ant-card-body > span.ant-avatar {
   position: absolute;
-  top: -45%;
+  top: -42%;
   left: 50%;
   transform: translateX(-50%);
 }

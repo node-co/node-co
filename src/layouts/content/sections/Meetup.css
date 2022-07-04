@@ -24,7 +24,6 @@ section#meetup > div.card-container > span:nth-child(2) {
 }
 
 section#meetup > div.ant-image > img.ant-image-img {
-  position: relative;
   transform: translateY(-5%);
   z-index: 0;
 }

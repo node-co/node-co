@@ -5,7 +5,7 @@ import Footer from "@/layouts/footer/Footer";
 
 const Home: React.FC = () => {
   return (
-    <Layout>
+    <Layout style={{ backgroundColor: "#ffffff" }}>
       <Header />
       <Content />
       <Footer />

@@ -1,0 +1,11 @@
+section#talks {
+  width: 100vw;
+  height: 80vh;
+  background-image: url("@/assets/nodeco-bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: grayscale(90%);
+  opacity: 0.3;
+  transform: translateY(-6%);
+}

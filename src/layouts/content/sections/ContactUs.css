@@ -4,6 +4,7 @@ section#contact-us {
   display: flex;
   justify-content: center;
   align-items: center;
+  transform: translateY(-11.5%);
   background-color: var(--septenary-color);
 }
 
