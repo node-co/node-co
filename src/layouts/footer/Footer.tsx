@@ -44,7 +44,7 @@ const CustomFooter: React.FC = () => {
         </Col>
       </Row>
       <Row justify="center">
-        <Col span={18}>
+        <Col span={8}>
           <span>{textFooter}</span>
         </Col>
         <Col span={1} pull={1}>
