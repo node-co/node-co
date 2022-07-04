@@ -1,12 +1,16 @@
 import { useState } from "react";
-import { Button, Card, Col, Row } from "antd";
+import { Avatar, Button, Card, Col, Row } from "antd";
+import camilomontoyau from "@/assets/camilomontoyau.png";
+import rubenrestrepo from "@/assets/rubenrestrepo.png";
+import dhsustainer from "@/assets/dhsustainer.png";
+import calypsobronte from "@/assets/calypsobronte.png";
 import "./Organizers.css";
 
 const Organizers: React.FC = () => {
   const organizersList = [
     {
       id: 1,
-      avatar: "",
+      avatar: camilomontoyau,
       name: "CAMILO MONTOYA",
       profesion: `Consultor Desarrollo de Software / Profesor / HablemosJS / javascript, React , NodeJS Python Fundador de la comunidad NodeCo`,
       social: "camilomontoyau",
@@ -14,7 +18,7 @@ const Organizers: React.FC = () => {
     },
     {
       id: 2,
-      avatar: "",
+      avatar: rubenrestrepo,
       name: "RUBÉN RESTREPO",
       profesion: `Desarrollador de software en Auth0 organizador NodeCo y ISM_Medellin`,
       social: "rubenrestrepo",
@@ -22,15 +26,15 @@ const Organizers: React.FC = () => {
     },
     {
       id: 3,
-      avatar: "",
+      avatar: dhsustainer,
       name: "DANIEL HERRERA",
       profesion: `Desarrollador Web Organizador NodeCo`,
       social: "dhsustainer",
-      contact: "",
+      contact: "https://www.linkedin.com/in/dhsustainer/",
     },
     {
       id: 4,
-      avatar: "",
+      avatar: calypsobronte,
       name: "LINA MARÍA MONTAÑO",
       profesion: `Backend Developer JS and Python Mentora en CoderiseorgOrganizadora de NodeCO Podcast CaminoDev`,
       social: "calypsobronte",
@@ -58,6 +62,7 @@ const Organizers: React.FC = () => {
               return (
                 <Col span={8} key={organizer.id}>
                   <Card>
+                    <Avatar src={organizer.avatar} size={110} />
                     <h3>{organizer.name}</h3>
                     <p>{organizer.profesion}</p>
                     <p>
