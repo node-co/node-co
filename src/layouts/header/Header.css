@@ -14,7 +14,7 @@ header.ant-layout-header div.ant-row > div.ant-col {
 }
 
 header.ant-layout-header div.ant-row > div.ant-col > a {
-  color: var(--primary-color);
+  color: var(--quaternary-color);
 }
 
 header.ant-layout-header div.ant-row > div.ant-col > a > span {
@@ -24,6 +24,6 @@ header.ant-layout-header div.ant-row > div.ant-col > a > span {
 
 header.ant-layout-header div.ant-row > div.ant-col > a > span:hover {
   cursor: pointer;
-  border-bottom: 1px solid var(--bg-primary);
+  border-bottom: 1px solid var(--primary-color);
   font-weight: var(--font-weight-400);
 }

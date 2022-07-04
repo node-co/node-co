@@ -1,16 +1,16 @@
 footer.ant-layout-footer {
   padding-top: 2rem;
-  background-color: var(--primary-color);
+  background-color: var(--quaternary-color);
   margin: 0;
 }
 
 footer.ant-layout-footer div.ant-row > div.ant-col > a > i {
   font-size: 1.5rem;
-  color: #000000;
+  color: var(--quinary-color);
 }
 
 footer.ant-layout-footer div.ant-row > div.ant-col > a > i:hover {
-  background-color: #e6e6e6;
+  background-color: var(--sextenary-color);
   padding: 3px;
   border-radius: 50%;
 }
@@ -26,11 +26,11 @@ footer.ant-layout-footer div.ant-row > div.ant-col > button.ant-btn {
 }
 
 footer.ant-layout-footer div.ant-row > div.ant-col > button.ant-btn:hover {
-  border-color: var(--bg-primary);
+  border-color: var(--primary-color);
 }
 
 footer.ant-layout-footer div.ant-row > div.ant-col > button.ant-btn > i {
   font-size: 1rem;
   font-weight: var(--font-weight-400);
-  color: var(--bg-primary);
+  color: var(--primary-color);
 }

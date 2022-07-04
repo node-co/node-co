@@ -1,5 +1,5 @@
 section#organizers {
-  background-color: #f7f7f7;
+  background-color: var(--octonary-color);
   padding: 1rem;
   min-height: 60vh;
 }
@@ -20,17 +20,17 @@ section#organizers span:nth-child(2) {
 }
 
 section#organizers > div.ant-row > div.ant-col > button.ant-btn {
-  background-color: #979696;
+  background-color: var(--septenary-color);
   width: 1rem;
 }
 
 section#organizers > div.ant-row > div.ant-col > button.ant-btn:focus,
 button.ant-btn:hover {
-  border: 1px solid #979696;
+  border: 1px solid var(--septenary-color);
 }
 
 section#organizers > div.ant-row > div.ant-col > button.ant-btn > i {
-  color: #ffffff;
+  color: var(--quaternary-color);
   font-size: 1.5rem;
 }
 
@@ -51,7 +51,7 @@ section#organizers div.ant-card > div.ant-card-body > span.ant-avatar {
 
 section#organizers div.ant-card > div.ant-card-body > p:nth-child(3) {
   font-size: 0.58rem;
-  color: var(--bg-primary);
+  color: var(--primary-color);
 }
 
 section#organizers div.ant-card > div.ant-card-body > p:nth-child(4) {
@@ -60,18 +60,18 @@ section#organizers div.ant-card > div.ant-card-body > p:nth-child(4) {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  color: var(--third-color);
+  color: var(--ternary-color);
   bottom: 8%;
   left: 50%;
   transform: translateX(-50%);
 }
 
 section#organizers div.ant-card > div.ant-card-body > p:nth-child(4) > i {
-  border: 1px solid #979696;
+  border: 1px solid var(--septenary-color);
   padding: 3px;
   border-radius: 50%;
-  background-color: #979696;
-  color: #ffffff;
+  background-color: var(--septenary-color);
+  color: var(--quaternary-color);
 }
 
 section#organizers div.ant-card > div.ant-card-body > button.ant-btn {
@@ -80,9 +80,9 @@ section#organizers div.ant-card > div.ant-card-body > button.ant-btn {
   display: flex;
   justify-content: space-evenly;
   padding-top: 0.4rem;
-  border: 1px solid var(--bg-primary);
-  background-color: var(--bg-primary);
-  color: #ffffff;
+  border: 1px solid var(--primary-color);
+  background-color: var(--primary-color);
+  color: var(--quaternary-color);
   bottom: -10%;
   right: 50%;
   transform: translateX(50%);

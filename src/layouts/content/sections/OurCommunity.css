@@ -10,7 +10,7 @@ section#our-community > div.main-text {
   height: 30vh;
   display: flex;
   flex-direction: column;
-  color: var(--primary-color);
+  color: var(--quaternary-color);
   z-index: 1;
 }
 
@@ -40,6 +40,6 @@ section#our-community > div.main-text > a.ant-btn {
   height: 5.5vh;
   margin-top: 1rem;
   padding-top: 1rem;
-  color: var(--primary-color);
-  background-color: var(--bg-primary);
+  color: var(--quaternary-color);
+  background-color: var(--primary-color);
 }

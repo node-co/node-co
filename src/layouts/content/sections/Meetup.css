@@ -13,14 +13,14 @@ section#meetup > div.card-container > span:nth-child(1) {
   text-align: center;
   font-weight: 400;
   font-size: 2.3rem;
-  color: var(--primary-color);
+  color: var(--quaternary-color);
 }
 
 section#meetup > div.card-container > span:nth-child(2) {
   text-align: center;
   font-weight: 400;
   font-size: 1.3rem;
-  color: var(--primary-color);
+  color: var(--quaternary-color);
   margin-bottom: 3rem;
 }
 
@@ -51,8 +51,8 @@ section#meetup > div.card-container a.ant-btn {
   justify-content: space-around;
   align-items: center;
   padding-top: 2rem;
-  color: var(--primary-color);
-  background-color: var(--bg-primary);
+  color: var(--quaternary-color);
+  background-color: var(--primary-color);
   left: 50%;
   transform: translateX(-50%);
   bottom: 10%;
