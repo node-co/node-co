@@ -37,7 +37,9 @@ section#our-community > div.main-text > a.ant-btn {
   justify-content: space-around;
   align-items: center;
   width: 16vw;
+  height: 5.5vh;
   margin-top: 1rem;
+  padding-top: 1rem;
   color: var(--primary-color);
   background-color: var(--bg-primary);
 }
