@@ -1,4 +1,4 @@
-import { Button, Col, Divider, Layout, Row } from "antd";
+import { BackTop, Button, Col, Divider, Layout, Row } from "antd";
 const { Footer } = Layout;
 import nodeDark from "@/assets/nodeco-dark.svg";
 import CommonNavComponent from "@/components/common-nav/CommonNav";
@@ -38,19 +38,21 @@ const CustomFooter: React.FC = () => {
   return (
     <Footer>
       <CommonNavComponent logo={nodeDark} options={footerOptions} />
-      <Row justify='center'>
+      <Row justify="center">
         <Col span={20} pull={1}>
           <Divider />
         </Col>
       </Row>
-      <Row justify='center'>
+      <Row justify="center">
         <Col span={18}>
           <span>{textFooter}</span>
         </Col>
         <Col span={1} pull={1}>
-          <Button>
-            <i className='bx bx-up-arrow-alt'></i>
-          </Button>
+          <BackTop>
+            <Button>
+              <i className="bx bx-up-arrow-alt"></i>
+            </Button>
+          </BackTop>
         </Col>
       </Row>
     </Footer>
