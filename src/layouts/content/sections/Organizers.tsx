@@ -5,9 +5,10 @@ import rubenrestrepo from "@/assets/rubenrestrepo.png";
 import dhsustainer from "@/assets/dhsustainer.png";
 import calypsobronte from "@/assets/calypsobronte.png";
 import "./Organizers.css";
+import { OrganizerType } from "@/types/GenericTypes";
 
 const Organizers: React.FC = () => {
-  const organizersList = [
+  const organizersList: OrganizerType[] = [
     {
       id: 1,
       avatar: camilomontoyau,
@@ -49,7 +50,7 @@ const Organizers: React.FC = () => {
   const handlerSlider = (position: string) => {
     const cacheFirstId = list[0]?.id as number;
     const cacheLastId = organizersList.at(-1)?.id as number;
-    let tempList = [];
+    let tempList: OrganizerType[] = [];
     if (position === "right") {
       tempList = organizersList.filter(
         (item) => item.id > cacheFirstId && item.id <= cacheLastId

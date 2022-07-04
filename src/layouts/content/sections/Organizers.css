@@ -44,7 +44,7 @@ section#organizers div.ant-card {
 
 section#organizers div.ant-card > div.ant-card-body > span.ant-avatar {
   position: absolute;
-  top: -37%;
+  top: -40%;
   left: 50%;
   transform: translateX(-50%);
 }
