@@ -42,9 +42,26 @@ const Organizers: React.FC = () => {
     },
   ];
 
-  let [list, setList] = useState([
+  const [list, setList] = useState([
     ...organizersList.filter((item) => item.id < 4),
   ]);
+
+  const handlerSlider = (position: string) => {
+    const cacheFirstId = list[0]?.id as number;
+    const cacheLastId = organizersList.at(-1)?.id as number;
+    let tempList = [];
+    if (position === "right") {
+      tempList = organizersList.filter(
+        (item) => item.id > cacheFirstId && item.id <= cacheLastId
+      );
+      if (tempList.length < 3) return;
+      setList(tempList);
+    } else {
+      tempList = organizersList.filter((item) => item.id < cacheLastId);
+      if (tempList.length < 3) return;
+      setList(tempList);
+    }
+  };
 
   return (
     <section id="organizers">
@@ -52,7 +69,7 @@ const Organizers: React.FC = () => {
       <span>Conoce quiénes lideran la comunidad</span>
       <Row gutter={16} justify="center">
         <Col span={1}>
-          <Button shape="circle">
+          <Button shape="circle" onClick={() => handlerSlider("left")}>
             <i className="bx bx-chevron-left"></i>
           </Button>
         </Col>
@@ -80,7 +97,7 @@ const Organizers: React.FC = () => {
           </Row>
         </Col>
         <Col span={1}>
-          <Button shape="circle">
+          <Button shape="circle" onClick={() => handlerSlider("right")}>
             <i className="bx bx-chevron-right"></i>
           </Button>
         </Col>

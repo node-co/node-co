@@ -50,7 +50,7 @@ section#organizers div.ant-card > div.ant-card-body > span.ant-avatar {
 }
 
 section#organizers div.ant-card > div.ant-card-body > p:nth-child(3) {
-  font-size: 0.7rem;
+  font-size: 0.58rem;
   color: var(--bg-primary);
 }
 
