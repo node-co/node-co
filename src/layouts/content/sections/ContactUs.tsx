@@ -25,9 +25,9 @@ const ContactUs: React.FC = () => {
           </Col>
           <Col span={10}>
             <ul>
-              {eventList.map((item) => {
+              {eventList.map((item, index) => {
                 return (
-                  <li>
+                  <li key={index}>
                     <i className="bx bx-check"></i>
                     {item}
                   </li>

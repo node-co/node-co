@@ -1,11 +1,81 @@
 section#talks {
   width: 100vw;
   height: 80vh;
-  background-image: url("@/assets/nodeco-bg.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  filter: grayscale(90%);
-  opacity: 0.3;
   transform: translateY(-6%);
+}
+
+section#talks > div.talks-container {
+  position: absolute;
+  width: 80vw;
+  height: 73vh;
+  margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  z-index: 1;
+}
+
+section#talks
+  > div.talks-container
+  > div.ant-row
+  > div.ant-col
+  > p:first-child {
+  font-size: 2rem;
+  line-height: 2.2rem;
+}
+
+section#talks
+  > div.talks-container
+  > div.ant-row
+  > div.ant-col
+  > p:nth-child(2) {
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+}
+
+section#talks
+  > div.talks-container
+  > div.ant-row
+  > div.ant-col
+  > p:nth-child(3) {
+  font-size: 1.1rem;
+  color: var(--primary-color);
+}
+
+section#talks > div.talks-container div.ant-card {
+  border-radius: 8px;
+  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.3);
+}
+
+section#talks > div.talks-container label {
+  color: var(--primary-color);
+}
+
+section#talks > div.talks-container label.ant-checkbox-wrapper {
+  color: var(--secondary-color);
+  font-size: 0.45rem;
+  display: flex;
+  align-items: center;
+}
+
+section#talks > div.talks-container input,
+section#talks > div.talks-container textarea {
+  border: 1px solid var(--primary-color);
+}
+
+section#talks > div.ant-image {
+  width: 100vw;
+  filter: grayscale(100%);
+  opacity: 0.2;
+  z-index: 0;
+}
+
+section#talks > div.talks-container button.ant-btn {
+  position: relative;
+  width: 10vw;
+  height: 4vh;
+  background-color: var(--primary-color);
+  color: var(--quaternary-color);
+  left: 50%;
+  transform: translateX(-50%);
 }
