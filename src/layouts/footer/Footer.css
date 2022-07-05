@@ -1,0 +1,31 @@
+footer.ant-layout-footer {
+  transform: translateY(-15%);
+  background-color: var(--quaternary-color);
+}
+
+footer.ant-layout-footer div.ant-row > div.ant-col > a > i {
+  font-size: 1.5rem;
+  color: var(--quinary-color);
+}
+
+footer.ant-layout-footer div.ant-row > div.ant-col > a > i:hover {
+  background-color: var(--sextenary-color);
+  padding: 3px;
+  border-radius: 50%;
+}
+
+footer.ant-layout-footer div.ant-row > div.ant-col > span {
+  font-size: 0.7rem;
+  font-weight: var(--font-weight-400);
+  color: var(--secondary-color);
+}
+
+footer.ant-layout-footer div.ant-row > div.ant-col > button.ant-btn:hover {
+  border-color: var(--primary-color);
+}
+
+footer.ant-layout-footer div.ant-row > div.ant-col > button.ant-btn > i {
+  font-size: 1rem;
+  font-weight: var(--font-weight-400);
+  color: var(--primary-color);
+}
