@@ -1,8 +1,8 @@
-section#our-community {
+.ourCommunity {
   transform: translateY(9%);
 }
 
-section#our-community > div.main-text {
+.mainText {
   position: absolute;
   top: 50%;
   transform: translateX(50%) translateY(-50%);
@@ -14,32 +14,33 @@ section#our-community > div.main-text {
   z-index: 1;
 }
 
-section#our-community > div.main-text > span:nth-child(1) {
+.mainText__firstLine {
   font-size: 2.5rem;
   font-weight: 600;
   line-height: 3rem;
 }
 
-section#our-community > div.main-text > span:nth-child(2) {
+.mainText__secondLine {
   font-size: 2rem;
   font-weight: 600;
   line-height: 3rem;
 }
 
-section#our-community > div.main-text > span:nth-child(3) {
+.mainText__thirdLine {
   font-size: 1.7rem;
   font-weight: 600;
   line-height: 3rem;
 }
 
-section#our-community > div.main-text > a.ant-btn {
-  display: flex;
+.mainText__btn {
+  /* display: flex;
   justify-content: space-around;
-  align-items: center;
-  width: 16vw;
-  height: 5.5vh;
+  align-items: center; */
+  padding: 10px 15px;
+  border: none;
+  width: 286px;
+  height: 49px;
   margin-top: 1rem;
-  padding-top: 1rem;
   color: var(--quaternary-color);
   background-color: var(--primary-color);
 }
