@@ -1,0 +1,21 @@
+:root {
+  --primary-color: #00aa46;
+  --secondary-color: #616f92;
+  --ternary-color: #878787;
+  --quaternary-color: #ffffff;
+  --quinary-color: #000000;
+  --sextenary-color: #e6e6e6;
+  --septenary-color: #979696;
+  --octonary-color: #f7f7f7;
+  --font-family: "Poppins", Arial, Helvetica, sans-serif;
+  --font-weight-200: 200;
+  --font-weight-400: 400;
+}
+
+* {
+  font-family: var(--font-family);
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
