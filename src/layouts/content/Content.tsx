@@ -6,9 +6,11 @@ import OurCommunity from "./sections/OurCommunity";
 import Talks from "./sections/Talks";
 const { Content } = Layout;
 
+import styles from './Content.module.css'
+
 const CustomContent = () => {
   return (
-    <Content style={{ backgroundColor: "#ffffff" }}>
+    <Content className={styles.main}>
       <OurCommunity />
       <Meetup />
       <Talks />
