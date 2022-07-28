@@ -5,6 +5,7 @@ section#talks {
 }
 
 section#talks > div.talks-container {
+  padding-top: 39px;
   position: absolute;
   width: 80vw;
   height: 73vh;

@@ -1,0 +1,47 @@
+.Meetup {
+  background: url('@/assets/meetup-bg.png') no-repeat;
+  background-size: cover;
+  height: auto;
+  width: 100%;
+  z-index: 1;
+  margin-top: -3%;
+  display: flex;
+  justify-content: center;
+}
+
+.cardContainer {
+  padding: 5% 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  text-align: center;
+  font-weight: 400;
+  font-size: 2.3rem;
+  color: var(--quaternary-color);
+}
+
+.description {
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: var(--quaternary-color);
+  margin-bottom: 3rem;
+}
+
+.event__card {
+  border-radius: 8px;
+  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.3);
+}
+
+.card___btn {
+  color: var(--quaternary-color) !important;
+  background-color: var(--primary-color) !important;
+}
+
+.card___title {
+  min-height: 150px;
+  text-align: center;
+}
