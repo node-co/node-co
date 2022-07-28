@@ -1,9 +1,10 @@
 import { Button, Image } from "antd";
+import { MEETUP_URL } from "@/constants";
+import { SmileOutlined } from "@ant-design/icons";
 import nodecoBackground from "@/assets/nodeco-bg.png";
 import styles from "./OurCommunity.module.css";
 
 const OurCommunity: React.FC = () => {
-  const meetupLink = "https://www.meetup.com/es/node_co/";
   return (
     <section id='our-community' className={styles.ourCommunity}>
       <div className={styles.mainText}>
@@ -11,12 +12,13 @@ const OurCommunity: React.FC = () => {
         <span className={styles.mainText__secondLine}>NodeJS + Javascript</span>
         <span className={styles.mainText__thirdLine}>En Colombia</span>
         <Button 
-          shape='round' 
-          href={meetupLink} 
+          shape='round'
+          size='large'
+          href={MEETUP_URL} 
           target='_blank'
           className={styles.mainText__btn}
         >
-          <i className='bx bx-smile'></i>
+          <SmileOutlined />
           <span>ÚNETE A LA COMUNIDAD</span>
         </Button>
       </div>
