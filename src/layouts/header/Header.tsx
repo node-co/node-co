@@ -8,7 +8,7 @@ import "./Header.css";
 const CustomHeader: React.FC = () => {
   const headerOptions: NavOptions[] = [
     {
-      title: "NUESTRA COMUNIDAD",
+      title: "COMUNIDAD",
       isSpan: "YES",
       link: "#our-community",
     },
