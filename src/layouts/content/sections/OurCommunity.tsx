@@ -8,9 +8,11 @@ const OurCommunity: React.FC = () => {
   return (
     <section id='our-community' className={styles.ourCommunity}>
       <div className={styles.mainText}>
-        <span className={styles.mainText__firstLine}>Comunidad Tech</span>
-        <span className={styles.mainText__secondLine}>NodeJS + Javascript</span>
-        <span className={styles.mainText__thirdLine}>En Colombia</span>
+        <div className={styles.mainText__text}>
+          <span className={styles.mainText__firstLine}>Comunidad Tech</span>
+          <span className={styles.mainText__secondLine}>NodeJS + Javascript</span>
+          <span className={styles.mainText__thirdLine}>En Colombia</span>
+        </div>
         <Button 
           shape='round'
           size='large'
@@ -22,7 +24,7 @@ const OurCommunity: React.FC = () => {
           <span>ÚNETE A LA COMUNIDAD</span>
         </Button>
       </div>
-      <Image src={nodecoBackground} preview={false} />
+      <Image className={styles.heroImage} src={nodecoBackground} preview={false} />
     </section>
   );
 };
