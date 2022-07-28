@@ -1,7 +1,7 @@
-import { Button, Card, Col, Image, Row } from "antd";
-import meetupBackground from "@/assets/meetup-bg.png";
-import "./Meetup.css";
+import { Button, Card, Col, Row } from "antd";
 import { CardOption } from "@/types/GenericTypes";
+import { YoutubeOutlined } from "@ant-design/icons";
+import styles from  "./Meetup.module.css";
 
 const Meetup: React.FC = () => {
   const cards: CardOption[] = [
@@ -24,18 +24,37 @@ const Meetup: React.FC = () => {
     },
   ];
   return (
-    <section id='meetup'>
-      <div className='card-container'>
-        <span>Meetup</span>
-        <span>Descubre los eventos que hemos realizado</span>
+    <section id='meetup' className={styles.Meetup}>
+      <div className={styles.cardContainer}>
+        <span className={styles.title}>Meetups</span>
+        <span className={styles.description}>Descubre los eventos que hemos realizado</span>
         <Row gutter={20} justify='space-around'>
           {cards.map((card, index) => {
             return (
               <Col span={6} key={index}>
-                <Card title={card.date}>
-                  <p>{card.title}</p>
-                  <Button shape='round' href={card.link} target={"_blank"}>
-                    <i className='bx bx-caret-right-square'></i>
+                <Card 
+                  className={styles.event__card}
+                  title={card.date}
+                  headStyle={{
+                    color: 'var(--secondary-color)', 
+                    fontSize: '0.7rem',
+                    textAlign: 'center'
+                  }}
+                  bodyStyle={{
+                    display: 'flex',
+                    flexDirection: 'column'
+                  }}
+                >
+                  <p className={styles.card___title}>{card.title}</p>
+                  <Button 
+                    shape='round' 
+                    href={card.link} 
+                    target={"_blank"}
+                    size='large'
+                    className={styles.card___btn}
+                    icon={<YoutubeOutlined />}
+                  >
+                    
                     <span>VER LA CHARLA</span>
                   </Button>
                 </Card>
@@ -44,7 +63,6 @@ const Meetup: React.FC = () => {
           })}
         </Row>
       </div>
-      <Image src={meetupBackground} preview={false} />
     </section>
   );
 };
