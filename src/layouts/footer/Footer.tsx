@@ -49,7 +49,9 @@ const CustomFooter: React.FC = () => {
         </Col>
         <Col span={1} pull={1}>
           <BackTop>
+            <div style={{display: 'none'}}>heelo</div>
             <Button>
+
               <i className="bx bx-up-arrow-alt"></i>
             </Button>
           </BackTop>
